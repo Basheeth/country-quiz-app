@@ -28,27 +28,29 @@ function buildQuestion(name,capital,flag){
     questionType = Math.floor(Math.random()*3);
 
     if (questionType == 1){
-        rendorHtml(`What is the capital of${b}`)
+        renderHtml(`What is the capital of${b}`,option1)
     }
     else if (questionType == 2){
-        rendorHtml(`${capital} is the capital of `)
+        renderHtml(`${capital} is the capital of `,option2)
     }
     else{
-        rendorHtml(`${flag} which country does this flag belongs to?`)
+        renderHtml(`${flag} which country does this flag belongs to?`,option2)
     }
 
 }
 
 
-function rendorHtml(ques,options){
+function renderHtml(ques,options){
       question.innerText = ques;
+
+      
    
-      option1.innerText = ;      
+      option1.innerText = options[0];      
 
-      option2.innerText = ;
+      option2.innerText = options[1];
 
-      option3.innerText = ;
+      option3.innerText = options[2];
 
-      option4.innerText = ;
+      option4.innerText = options[3];
       
 }
