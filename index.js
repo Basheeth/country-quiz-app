@@ -18,7 +18,10 @@ function createQuiz(){
         let country = data[Math.floor(Math.random()*data.length)];
         for (let i = 0 ; i < 3 ; i++){
             let fakeCountries = data[Math.floor(Math.random()*3)];
-            
+            option1.push(fakeCountries.name.common);
+            option2.push(fakeCountries.capital[0]);
+            console.log("hi", option1);
+            console.log("hi", option2);
         }
         buildQuestion(country.name.common,country.capital[0],country.flag);
     })
@@ -40,17 +43,15 @@ function buildQuestion(name,capital,flag){
 }
 
 
-function renderHtml(ques,options){
+function rendorHtml(ques,options){
       question.innerText = ques;
-
-      
    
-      option1.innerText = options[0];      
+      option1.innerText = ;      
 
-      option2.innerText = options[1];
+      option2.innerText = ;
 
-      option3.innerText = options[2];
+      option3.innerText = ;
 
-      option4.innerText = options[3];
+      option4.innerText = ;
       
-}
+// }
