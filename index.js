@@ -13,10 +13,11 @@ function createQuiz(){
         return response.json();
     })
     .then(function(data){
-        let i =data[Math.floor(Math.random()*data.length)];
-        console.log(i);
-        console.log(i.name);
-        console.log(i.capital);
+        let i = data[Math.floor(Math.random()*data.length)];
+        questionType = Math.floor(Math.random()*3);
+        buildQuestion(i.name.common)
+        console.log(i.name.common);
+        console.log(i.capital[0]);
         console.log(i.flag);
     })
 }
