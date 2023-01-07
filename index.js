@@ -43,15 +43,17 @@ function buildQuestion(name,capital,flag){
 }
 
 
-function rendorHtml(ques,options){
-      question.innerText = ques;
+//creating option
+
+// function rendorHtml(ques,options){
+//       question.innerText = ques;
    
-      option1.innerText = ;      
+//       option1.innerText = ;      
 
-      option2.innerText = ;
+//       option2.innerText = ;
 
-      option3.innerText = ;
+//       option3.innerText = ;
 
-      option4.innerText = ;
+//       option4.innerText = ;
       
-}
+// }
