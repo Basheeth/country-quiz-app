@@ -41,5 +41,5 @@ function buildQuestion(name,capital,flag){
 
 
 function rendorHtml(){
-
+      
 }
