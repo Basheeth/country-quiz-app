@@ -54,4 +54,4 @@ function rendorHtml(ques,options){
 
       option4.innerText = ;
       
-// }
+}
