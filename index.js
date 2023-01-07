@@ -16,5 +16,7 @@ function createQuiz(){
         let i =data[Math.floor(Math.random()*data.length)];
         console.log(i);
         console.log(i.name);
+        console.log(i.capital);
+        console.log(i.flag);
     })
 }
