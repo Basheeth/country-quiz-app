@@ -17,7 +17,7 @@ function createQuiz(){
     .then(function(data){
         let country = data[Math.floor(Math.random()*data.length)];
         for (let i = 0 ; i < 3 ; i++){
-            let fakeCountries = data[Math.floor(Math.random()*3)];
+            let fakeCountries = data[Math.floor(Math.random()*data.length)];
             option1.push(fakeCountries.name.common);
             option2.push(fakeCountries.capital[0]);
             console.log("hi", option1);
@@ -43,15 +43,17 @@ function buildQuestion(name,capital,flag){
 }
 
 
-function rendorHtml(ques,options){
-      question.innerText = ques;
+//creating option
+
+// function rendorHtml(ques,options){
+//       question.innerText = ques;
    
-      option1.innerText = ;      
+//       option1.innerText = ;      
 
-      option2.innerText = ;
+//       option2.innerText = ;
 
-      option3.innerText = ;
+//       option3.innerText = ;
 
-      option4.innerText = ;
+//       option4.innerText = ;
       
 // }
